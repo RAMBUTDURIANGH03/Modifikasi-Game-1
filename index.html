@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Arena X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <h1>CYBER ARENA X</h1>
+            <div class="loader-bar">
+                <div class="loader-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div id="scrollProgress"></div>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">CYBER ARENA X</h1>
+
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <span class="badge">
+                SEASON 12 LIVE NOW
+            </span>
+
+            <h1 id="typingTitle"></h1>
+
+            <p>
+                Fight powerful bosses, dominate PvP arenas,
+                build legendary guilds and become the ultimate
+                cyber warrior.
+            </p>
+
+            <div class="hero-buttons">
+                <button id="btnReward" class="primary">
+                    Claim Reward
+                </button>
+
+                <button class="secondary">
+                    Watch Trailer
+                </button>
+            </div>
+
+            <p id="reward"></p>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="https://picsum.photos/700/500" alt="Cyber Arena">
+        </div>
+
+    </section>
+
+    <!-- Statistics -->
+    <section id="stats" class="stats">
+
+        <div class="stat-card">
+            <h2 id="playerCounter">0</h2>
+            <p>Players</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 id="downloadCounter">0</h2>
+            <p>Downloads</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 id="guildCounter">0</h2>
+            <p>Guilds</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>150+</h2>
+            <p>Weapons</p>
+        </div>
+
+    </section>
+
+    <!-- Server Status -->
+    <section class="servers">
+
+        <h2>Server Status</h2>
+
+        <div class="server-grid">
+
+            <div class="server online">
+                ● Asia Server Online
+            </div>
+
+            <div class="server online">
+                ● Europe Server Online
+            </div>
+
+            <div class="server maintenance">
+                ● America Maintenance
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Daily Reward -->
+    <section class="daily">
+
+        <h2>Next Daily Reward</h2>
+
+        <h1 id="countdown">
+            24:00:00
+        </h1>
+
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+
+        <h2>Game Features</h2>
+
+        <div class="feature-list">
+
+            <div class="card">
+                <h3>⚔ PvP Battle</h3>
+                <p>Fight players worldwide.</p>
+            </div>
+
+            <div class="card">
+                <h3>🏰 Guild System</h3>
+                <p>Create and manage guilds.</p>
+            </div>
+
+            <div class="card">
+                <h3>👹 Boss Raid</h3>
+                <p>Defeat legendary bosses.</p>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Space Arena</h3>
+                <p>Battle in outer space.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- News -->
+    <section id="news" class="news">
+
+        <h2>Latest Updates</h2>
+
+        <div class="news-grid">
+
+            <div class="news-card">
+                <h3>Season 12 Released</h3>
+                <p>New rewards and maps available.</p>
+            </div>
+
+            <div class="news-card">
+                <h3>Cyber Dragon Boss</h3>
+                <p>Challenge the strongest enemy.</p>
+            </div>
+
+            <div class="news-card">
+                <h3>Rank Rewards Updated</h3>
+                <p>Earn exclusive skins.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+
+        <h2>What Players Say</h2>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial">
+                ⭐⭐⭐⭐⭐
+                <p>Best Cyber RPG Ever!</p>
+                <span>- Alex</span>
+            </div>
+
+            <div class="testimonial">
+                ⭐⭐⭐⭐⭐
+                <p>Amazing PvP System!</p>
+                <span>- Ryan</span>
+            </div>
+
+            <div class="testimonial">
+                ⭐⭐⭐⭐⭐
+                <p>Super Addictive Gameplay.</p>
+                <span>- Luna</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+
+        <h2>Game Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <img src="https://picsum.photos/400/250?1">
+            <img src="https://picsum.photos/400/250?2">
+            <img src="https://picsum.photos/400/250?3">
+            <img src="https://picsum.photos/400/250?4">
+
+        </div>
+
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="download">
+
+        <h2>Download Now</h2>
+
+        <p>
+            Available for Android, iOS and PC
+        </p>
+
+        <button id="btnDownload" class="primary">
+            Download Game
+        </button>
+
+        <div id="downloadBox" hidden>
+
+            <div class="progress">
+
+                <div id="downloadFill"></div>
+
+            </div>
+
+            <span id="downloadPercent">
+                0%
+            </span>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>Cyber Arena X</h3>
+
+        <div class="footer-links">
+
+            <a href="#">About</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Support</a>
+            <a href="#">Discord</a>
+
+        </div>
+
+        <p>
+            © 2026 Cyber Arena X
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
